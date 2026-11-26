@@ -7,11 +7,18 @@ Tienda online de alimentos envasados naturales con entrega en Chiclayo. Next.js 
 
 ## Puesta en marcha
 
+Con la base local (Docker):
+
 1. Instala dependencias: `npm install`
-2. Copia `.env.example` a `.env.local` y completa `DATABASE_URL` con la cadena del proyecto Supabase de **desarrollo** (Connect → Session pooler).
-3. Aplica las migraciones: `npm run db:migrate`
-4. Carga los datos de prueba: `npm run db:seed`
-5. Arranca: `npm run dev` y abre <http://localhost:3000/productos/granola-de-quinua-y-kiwicha>
+2. Copia `.env.example` a `.env.local` (ya apunta al Postgres local).
+3. Levanta Postgres: `npm run db:up` (puerto 5433, datos persistentes en un volumen)
+4. Aplica las migraciones: `npm run db:migrate`
+5. Carga los datos de prueba: `npm run db:seed`
+6. Arranca: `npm run dev` y abre <http://localhost:3000/productos/granola-de-quinua-y-kiwicha>
+
+`npm run db:reset` borra la base local y la recrea con migraciones y datos de prueba.
+
+Para usar el proyecto Supabase de **desarrollo**, pon en `DATABASE_URL` su cadena (Connect → Session pooler) y repite los pasos 4 y 5.
 
 ## Scripts
 
@@ -28,6 +35,9 @@ Tienda online de alimentos envasados naturales con entrega en Chiclayo. Next.js 
 | `npm run db:generate`  | Genera una migración en `drizzle/` a partir de `db/schema.ts`       |
 | `npm run db:migrate`   | Aplica las migraciones pendientes a la base de `DATABASE_URL`       |
 | `npm run db:seed`      | Inserta los datos de prueba (idempotente: no duplica si ya existen) |
+| `npm run db:up`        | Levanta el Postgres local de `compose.yaml`                         |
+| `npm run db:down`      | Detiene el Postgres local (conserva los datos)                      |
+| `npm run db:reset`     | Borra y recrea la base local con migraciones y datos de prueba      |
 
 ## Base de datos
 
