@@ -4,13 +4,13 @@ Investigado el 2026-11-23 con fuentes primarias. "No confirmado" = no hallado en
 
 ## Resumen
 
-| | Tarjeta | Yape | Plin | Comisión publicada | Mensualidad | SDK Node oficial |
-|---|---|---|---|---|---|---|
-| **Culqi** (BCP) | Sí | Sí (código de aprobación) | Sí (QR billeteras / PagoEfectivo) | 3.44% + US$0.20, inafecto a IGV | No | No (API REST) |
-| **Mercado Pago** | Sí | Sí (OTP Yape) | No | 3.49% + S/1.00 (+IGV) al instante; 3.29% + S/1.00 a 14 días | No | Sí (`mercadopago`) |
-| **Izipay** | Sí | Solo si ventas > S/200,000/mes | Igual que Yape | 3.44% + IGV + S/0.69 + IGV | S/0 | No confirmado |
-| **Niubiz** | Sí | Sí (si se habilita) | Sí | No publicada | No confirmado | No confirmado |
-| PayU Perú | Sí | No confirmado | No confirmado | No confirmado | — | — |
+|                  | Tarjeta | Yape                           | Plin                              | Comisión publicada                                          | Mensualidad   | SDK Node oficial   |
+| ---------------- | ------- | ------------------------------ | --------------------------------- | ----------------------------------------------------------- | ------------- | ------------------ |
+| **Culqi** (BCP)  | Sí      | Sí (código de aprobación)      | Sí (QR billeteras / PagoEfectivo) | 3.44% + US$0.20, inafecto a IGV                             | No            | No (API REST)      |
+| **Mercado Pago** | Sí      | Sí (OTP Yape)                  | No                                | 3.49% + S/1.00 (+IGV) al instante; 3.29% + S/1.00 a 14 días | No            | Sí (`mercadopago`) |
+| **Izipay**       | Sí      | Solo si ventas > S/200,000/mes | Igual que Yape                    | 3.44% + IGV + S/0.69 + IGV                                  | S/0           | No confirmado      |
+| **Niubiz**       | Sí      | Sí (si se habilita)            | Sí                                | No publicada                                                | No confirmado | No confirmado      |
+| PayU Perú        | Sí      | No confirmado                  | No confirmado                     | No confirmado                                               | —             | —                  |
 
 ## Culqi
 
@@ -54,8 +54,8 @@ Investigado el 2026-11-23 con fuentes primarias. "No confirmado" = no hallado en
 
 (TC referencial S/3.85.)
 
-| Ticket | Culqi | Culqi con mínimo S/3.50 | Mercado Pago al instante (+IGV) | Izipay tarjeta (+IGV) |
-|---|---|---|---|---|
-| S/20 | S/1.46 (7.3%) | S/3.50 (17.5%) | S/2.00 (10.0%) | S/1.63 (8.1%) |
-| S/50 | S/2.49 (5.0%) | S/3.50 (7.0%) | S/3.24 (6.5%) | S/2.84 (5.7%) |
-| S/150 | S/5.93 (4.0%) | — | S/7.36 (4.9%) | S/6.90 (4.6%) |
+| Ticket | Culqi         | Culqi con mínimo S/3.50 | Mercado Pago al instante (+IGV) | Izipay tarjeta (+IGV) |
+| ------ | ------------- | ----------------------- | ------------------------------- | --------------------- |
+| S/20   | S/1.46 (7.3%) | S/3.50 (17.5%)          | S/2.00 (10.0%)                  | S/1.63 (8.1%)         |
+| S/50   | S/2.49 (5.0%) | S/3.50 (7.0%)           | S/3.24 (6.5%)                   | S/2.84 (5.7%)         |
+| S/150  | S/5.93 (4.0%) | —                       | S/7.36 (4.9%)                   | S/6.90 (4.6%)         |
