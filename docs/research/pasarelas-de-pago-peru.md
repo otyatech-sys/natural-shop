@@ -1,6 +1,6 @@
 # Pasarelas de pago en Perú con tarjeta + Yape (y Plin)
 
-Investigado el 2026-11-23 con fuentes primarias. "No confirmado" = no hallado en fuente oficial. Decisión resultante: [ADR 0002](../adr/0002-mercado-pago-como-pasarela.md).
+Investigado el 2026-11-23 con fuentes primarias. "No confirmado" = no hallado en fuente oficial. Decisión resultante: [ADR 0002](../adr/0002-culqi-como-pasarela.md) (primero se eligió Mercado Pago; el 2026-11-25 se cambió a Culqi).
 
 ## Resumen
 

@@ -63,8 +63,16 @@ Una compra de un Cliente: una o más Variantes con cantidades, una Dirección y 
 _Avoid_: Orden, compra
 
 **Estado del Pedido** (`OrderStatus`):
-Etapa del ciclo de vida de un Pedido: Pendiente de pago → Pagado → En preparación → En camino → Entregado, o Cancelado. Un Pedido es Pagado solo cuando la pasarela lo confirma, no cuando el Cliente vuelve del pago.
+Etapa del ciclo de vida de un Pedido: Pendiente de pago → Pagado → En preparación → En camino → Entregado, o Cancelado. Un Pedido es Pagado solo cuando la pasarela lo confirma a nuestro servidor, nunca por lo que diga el navegador del Cliente.
 _Avoid_: Situación, fase
+
+**Medio de pago** (`PaymentMethod`):
+Forma en que el Cliente paga un Pedido: tarjeta, Yape con código de aprobación, o QR de billeteras (Yape o Plin).
+_Avoid_: Método de pago, forma de pago
+
+**Reembolso** (`Refund`):
+Devolución del importe total de un Pedido Cancelado. Se hace por la pasarela cuando el Medio de pago lo permite; si no, el Administrador lo devuelve por fuera y lo registra como Reembolso manual.
+_Avoid_: Devolución, extorno
 
 **Zona de envío** (`ShippingZone`):
 Grupo de distritos donde la tienda entrega a domicilio, con una tarifa de envío fija. No se entrega fuera de una Zona de envío.
